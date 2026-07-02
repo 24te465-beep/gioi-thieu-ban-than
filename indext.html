@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>自己紹介</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Yu Gothic", sans-serif;
+        background: linear-gradient(180deg, #fff7f9, #fff);
+        color: #4a3333;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(8px);
+        padding: 20px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #ffd6df;
+      }
+
+      .logo {
+        font-size: 34px;
+        color: #ff7f9c;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      nav a {
+        margin-left: 25px;
+        text-decoration: none;
+        color: #4a3333;
+        font-weight: bold;
+        padding: 10px 16px;
+        border-radius: 25px;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: white;
+        background: #ff8eb0;
+      }
+
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 90px;
+        gap: 50px;
+      }
+
+      .hero-text h3 {
+        color: #ff7f9c;
+        font-size: 24px;
+      }
+
+      .hero-text h1 {
+        font-size: 54px;
+        letter-spacing: 10px;
+        margin: 10px 0;
+      }
+
+      .hero-text h2 {
+        color: #ff7f9c;
+        font-size: 20px;
+        border-bottom: 2px solid #ffd6df;
+        padding-bottom: 20px;
+      }
+
+      .hero-text p {
+        line-height: 2;
+        font-size: 17px;
+      }
+
+      .avatar {
+        width: 330px;
+        height: 330px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 10px solid white;
+        box-shadow: 0 15px 35px rgba(255, 127, 156, 0.35);
+        transition: 0.4s;
+      }
+
+      .avatar:hover {
+        transform: scale(1.05);
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+        padding: 0 45px 60px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 22px;
+        padding: 32px;
+        border: 1px solid #ffdce4;
+        box-shadow: 0 8px 20px rgba(255, 127, 156, 0.14);
+        transition: 0.35s;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 18px 40px rgba(255, 127, 156, 0.28);
+      }
+
+      .card h2 {
+        font-size: 24px;
+        border-left: 8px solid #ff7f9c;
+        padding-left: 15px;
+        margin-bottom: 25px;
+      }
+
+      .label {
+        display: inline-block;
+        background: #ffe1e8;
+        color: #ff6f91;
+        padding: 8px 18px;
+        border-radius: 20px;
+        font-weight: bold;
+        margin: 15px 0 10px;
+      }
+
+      .card p,
+      .card li {
+        line-height: 1.9;
+        font-size: 16px;
+      }
+
+      .photo-row,
+      .home-img {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .photo-row img,
+      .home-img img {
+        width: 48%;
+        height: 185px;
+        object-fit: cover;
+        border-radius: 16px;
+        transition: 0.4s;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+      }
+
+      .photo-row img:hover,
+      .home-img img:hover {
+        transform: scale(1.05);
+      }
+
+      footer {
+        text-align: center;
+        font-size: 26px;
+        padding: 45px;
+        color: #5a3b3b;
+        font-weight: bold;
+      }
+
+      @media (max-width: 800px) {
+        .hero {
+          flex-direction: column;
+          text-align: center;
+          padding: 40px 25px;
+        }
+
+        .hero-text h1 {
+          font-size: 38px;
+        }
+
+        .container {
+          grid-template-columns: 1fr;
+          padding: 20px;
+        }
+
+        header {
+          flex-direction: column;
+          padding: 20px;
+        }
+
+        nav a {
+          margin: 8px;
+          display: inline-block;
+        }
+
+        .avatar {
+          width: 260px;
+          height: 260px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo"></div>
+      <nav>
+        <a href="#intro">自己紹介</a>
+        <a href="#hobby">趣味</a>
+        <a href="#hometown">故郷の紹介</a>
+        <a href="#dream">将来の夢</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h3></h3>
+        <h1>グェン ティ リン</h1>
+        <h2>第一工科大学 情報・AI・データサイエンス学科 3年</h2>
+        <p>
+          第一工科大学 情報・AI・データサイエンス学科 3年<br />
+          ベトナム出身です。<br />
+          新しいことを学ぶことが好きで、現在はJavaを中心に勉強しています。<br />
+          この研究室でさらに知識や技術を身につけたいと思っています。<br />
+        </p>
+      </div>
+
+      <img src="avatar.png" class="avatar" alt="プロフィール写真" />
+    </section>
+
+    <div class="container">
+      <section class="card" id="intro">
+        <h2>自己紹介（長所、短所を含む）</h2>
+
+        <div class="label">長所</div>
+        <p>
+          私は新しい知識を学ぶことが好きで、分からないことがあれば積極的に勉強しています。
+          研究室でもJavaの知識を深め、プログラミング能力を高めたいと思っています。
+        </p>
+
+        <div class="label">短所</div>
+        <p>
+          私の短所は慎重なところです。
+          プログラムを書くときに時間をかけすぎることがあります。
+          最近は時間を意識しながら、効率よく取り組めるように心がけています。
+        </p>
+      </section>
+
+      <section class="card" id="hobby">
+        <h2>趣味</h2>
+        <ul>
+          <li>音楽を聴くこと</li>
+          <li>料理を作ること</li>
+          <li>登山・ハイキング</li>
+        </ul>
+
+        <div class="photo-row">
+          <img src="mountain1.png" alt="登山写真1" />
+          <img src="mountain2.png" alt="登山写真2" />
+        </div>
+
+        <p>自然の中で過ごす時間が好きで、登山をすると気分転換にもなります。</p>
+      </section>
+
+      <section class="card" id="hometown">
+        <h2>故郷の紹介（観光や美味しい料理など）</h2>
+
+        <p>
+          私の故郷はベトナムのバクザン省です。
+          自然が豊かで、ライチの名産地として知られています。
+          また、タイイエントゥーという観光地も有名です。
+        </p>
+
+        <div class="home-img">
+          <img src="lychee.png" alt="ライチ" />
+          <img src="tayyentu.png" alt="タイイエントゥー" />
+        </div>
+      </section>
+
+      <section class="card" id="dream">
+        <h2>将来の夢</h2>
+        <p>
+          私の将来の夢は、日本でITエンジニアとして働くことです。
+          人々の生活を便利にするシステムやサービスを作りたいです。
+          そのために、Javaやデータベースなどの知識をしっかり身につけ、
+          チームに貢献できるエンジニアになりたいと考えています。
+        </p>
+      </section>
+    </div>
+
+    <footer>これからよろしくお願いいたします！</footer>
+  </body>
+</html>
