@@ -64,9 +64,10 @@
       }
 
       .hero-text h1 {
-        font-size: 54px;
-        letter-spacing: 10px;
+        font-size: 44px;
+        letter-spacing: 5px;
         margin: 10px 0;
+        white-space: nowrap;
       }
 
       .hero-text h2 {
@@ -96,10 +97,12 @@
       }
 
       .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 28px;
         padding: 0 45px 60px;
+        max-width: 1000px;
+        margin: 0 auto;
       }
 
       .card {
@@ -258,7 +261,8 @@
 
         <div class="photo-row">
           <img src="mountain1.png" alt="登山写真1" />
-          <img src="mountain2.png" alt="登山写真2" />
+          <img src="mountain3.png" alt="登山写真2" />
+          <img src="mountain2.png" alt="登山写真3" />
         </div>
 
         <p>自然の中で過ごす時間が好きで、登山をすると気分転換にもなります。</p>
